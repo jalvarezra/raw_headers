@@ -1,0 +1,48 @@
+
+.hide {
+    display: none;
+}
+
+#upload-form {
+    border: solid #f8f9fa;
+    padding: 20px;
+}
+#upload-form .row {
+    margin-bottom: 10px;
+}
+
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+}
+
+body .container{
+    background-color: white;
+}
+
+body #content header {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background: #353535;
+    background-size: cover;
+}
+
+
+body #content header h2 {
+    margin: 10px 0;
+    font-family: 'Ubuntu-light', 'frutiger_45_lightnormal', Arial, sans-serif;
+    font-weight: normal;
+}
+
+body #content header .title {
+    text-align: center;
+}
+
+
+body #content .header .akam_logo{
+    background: no-repeat scroll 0 0;
+    text-indent: -9999999px;
+    margin: 10px 0;
+}

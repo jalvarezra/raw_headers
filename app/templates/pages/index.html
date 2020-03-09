@@ -1,0 +1,32 @@
+{% extends "layouts/default.html" %}
+{% block content %}
+
+
+        <div class="py-5 text-center">
+            <img class="d-block mx-auto mb-4" src="/static/img/erc_logo_up.png" alt="" width="150" height="150">
+            <h2>Edge Redirector Tester</h2>
+            <p class="lead"> ERT automates redirect testing by executing requests and gathering the logs from the EdgeServers to provide request traceability. <br> The tool receives a csv file with the list of redirects you want to test.</p>
+        </div>
+
+
+        <div class="row"></div>
+            <form class="col-12" id="upload-form" action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-12 col-sm-6 hide">
+                        <label for="csv-erc-policy-file">ERC Policy CSV</label>
+                        <input type="file" class="form-control-file" name="csv-erc-policy-file" id="csv-erc-policy-file" accept="text/csv">
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <label for="csv-redirect-file">Test Redirects CSV</label>
+                        <input type="file" class="form-control-file" name="csv-redirect-file" id="csv-redirect-file" accept="text/csv" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <input class="btn btn-primary" type="submit" value="Submit"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+{% endblock %}
